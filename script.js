@@ -54,3 +54,12 @@ $("button").on("click", function(event) {
     localStorage.setItem("text8", text8);
     localStorage.setItem("text9", text9);
 });
+
+// Add a function to check & update the time/day //
+hourUpdater();
+var checkTime = setInterval(hourUpdater, 15000);
+
+function hourUpdater() {
+    var currentHour = moment().hours();
+    $(".time-block").each(function() {
+        var blockHour = parseInt($(this).attr("id").split(" ")[0]);
