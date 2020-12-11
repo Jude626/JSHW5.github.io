@@ -13,3 +13,21 @@ var timeList = ["9 AM", "10 AM", "11 AM", "12 AM", "1 PM", "2 PM", "3 PM", "4 PM
 // Make a string to give an id for each time //
 var idTime = ["9", "10", "11", "12","13", "14",  "15",  "16", "17"];
 
+// Create a for loop for each hour in the array //
+for (var i = 0; i < timeList.length; i++) {
+    var Row = $("<div class='row time-block'>").attr("id", idTime[i]);
+    var Div = $("<textarea class='col-10'>")
+    var Div2 = $("<div class='hour col-1'>");
+    var Btn = $("<button type='button' class='saveBtn col-1 far fa-save'>");
+
+    timeBlocks.append(Row);
+
+    newDiv2.text(timeList[i]);
+    newRow.append(Div2);
+
+    newDiv.text();
+    newRow.append(Div);
+
+    newBtn.text();
+    newRow.append(Btn);
+}
