@@ -1,1 +1,2 @@
 # JSHW5.github.io
+Created a day planner for the user to input information they'd like to be stored, with a save button to hold the data for them. In addition, the planner is able to self-update the date on its own as well as the current time with each passing hour. Time span is between 9 am to 5 pm; the files together in conjunction with the css will create the past time as white, the current time as red, & the future times as green!
