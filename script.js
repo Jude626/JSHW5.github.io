@@ -63,3 +63,19 @@ function hourUpdater() {
     var currentHour = moment().hours();
     $(".time-block").each(function() {
         var blockHour = parseInt($(this).attr("id").split(" ")[0]);
+
+        if (blockHour < currentHour) {
+            $(this).addClass("past");
+        } else if (blockHour === currentHour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
+    });
+}
+
+// Add a save button //
+var saveButton = document.querySelectorAll("button");
